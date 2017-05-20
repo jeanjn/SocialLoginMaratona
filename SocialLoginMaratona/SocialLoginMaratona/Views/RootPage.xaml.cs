@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-namespace SocialLoginMaratona
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace SocialLoginMaratona.Views
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class RootPage : ContentPage
     {
-        public MainPage()
+        public RootPage()
         {
             InitializeComponent();
         }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 using Xamarin.Forms;
 
 namespace SocialLoginMaratona
@@ -12,8 +8,7 @@ namespace SocialLoginMaratona
         public App()
         {
             InitializeComponent();
-
-            MainPage = new SocialLoginMaratona.MainPage();
+            MainPage = new NavigationPage(new Views.LoginPage());
         }
 
         protected override void OnStart()
